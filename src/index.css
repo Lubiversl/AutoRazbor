@@ -1,0 +1,227 @@
+
+body {
+  background: radial-gradient(circle, #030303 0%, #e2e2e2 100%); /* Голубой к синему */
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+
+.wrapper {
+  width: 85%;
+  margin: 20px;
+}
+
+
+header .logo {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0; /* Убирает отступы */
+  margin: 0; /* Убирает дополнительные внешние отступы */
+  display: inline-block; 
+}
+
+header .presentation {
+  margin:auto;
+  background: url('./img/img1.jpg') no-repeat;
+  width: 100%;
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 5%;
+  
+}
+
+.nav {
+  display:flex;
+  flex-direction:flex;
+  gap:20px;
+  padding:0px;
+  justify-content: space-between; 
+  list-style: none; 
+  cursor: pointer;
+}
+
+.nav li:hover {
+  display:flex;
+  flex-direction:row;
+  background-color: rgb(26, 4, 224);
+  color: white;
+  border-radius: 8px;
+  transition: 0.7s ease; 
+}
+
+.nav li .shopcart {
+  transform: scale(1.2);
+  padding: 0 10px 0 10px;
+}
+
+
+.nav li .shopcart.active {
+color:rgb(225, 250, 2);
+}
+header {
+  position:relative;
+}
+header .basket {
+  position: absolute;
+  top: 75px;
+  right:0;
+  min-width:250px;
+  min-height:250px;
+  background-color:rgb(154, 127, 179,65%);
+  box-shadow: 4px 5px 15px -7px rgb(154, 127, 179);
+  z-index:10;
+}
+
+header .basket .item {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+header .basket .item p {
+  margin: auto;
+}
+
+header .basket .item img {
+  border-radius: 8%;
+}
+header .basket .item img:hover {
+  box-shadow: 10px 1px 10px -7px rgb(54, 6, 226);
+  border: 2px rgb(28, 13, 158);
+}
+
+header .basket .item .delete-cart {
+  position:relative;
+  transform:scale(2);
+  left:190px;
+  top:-140px;
+}
+
+header .basket .item .delete-cart:hover {
+  background-color:rgb(200, 255, 0);
+  color: rgb(200, 255, 0);
+  border-radius: 8px;
+  transition: 1.3s ease; 
+}
+
+header .basket .item p.cunter {
+  margin:0;
+  position:relative;
+  left:290px;
+  top:-156px; 
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+main {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+main h3 {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center; 
+}
+
+main .Item {
+  background-color: rgb(228, 228, 228);
+  border-radius:10%;
+  border:2px solid gainsboro;
+  display:flex;
+  margin:auto;
+  margin-bottom:20px;
+  flex-direction: column;
+  position: relative;
+  overflow:hidden;
+  z-index:5;
+  max-width: 160px;
+  height: 360px;
+}
+
+main .Item:hover {
+  border: 2px bold rosybrown;
+  background-color: rosybrown;
+}
+
+main .Item p, div, b {
+margin:auto;
+margin-top: 5px;
+flex-wrap: wrap;
+
+}
+
+main b{
+  padding-left:7px;
+  padding-right:7px;
+}
+
+main b:hover{
+  color: green;
+  background-color:aliceblue;
+}
+
+main .Item img {
+  border-radius:10%;
+}
+
+main .Item .add-to-cart {
+  position:absolute;
+  width:25px;
+  height: 25px;
+  text-align:center;
+  background-color: aliceblue;
+  line-height: 25px;
+  color:darkgreen;
+  border-radius: 50%;
+  border:2px solid darkslateblue;
+  top:15px;
+  left:5px;
+  z-index: 10;
+  cursor:pointer;
+}
+
+main .Item .add-to-cart:hover {
+  transform:scale(1.2);
+  transition:0.5s ease;
+  font-size:1.2rem;
+  color:rgb(139, 139, 139)
+}
+
+.categories div {
+  display:list-item;
+  justify-content: space-between;
+  margin:20px 10px 10px 0;
+  padding:10px;
+  border:solid 2px var(--redbck);
+  background-color: rgb(243, 243, 243);
+  border-radius:8px;
+}
+
+.categories div:hover {
+  border:solid 2px var(--redbck);;
+  transition:0.5s ease-in-out;
+  background-color: var(--redbck);
+  color:whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  color:white;
+}
+  
